@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/проект дз.csproj",
+      "projectUniqueName": "/Users/edzhanaeva/RiderProjects/edzhanaeva/проект дз/проект дз.csproj",
       "projectName": "проект дз",
-      "projectPath": "/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/проект дз.csproj",
+      "projectPath": "/Users/edzhanaeva/RiderProjects/edzhanaeva/проект дз/проект дз.csproj",
       "packagesPath": "/Users/edzhanaeva/.nuget/packages/",
-      "outputPath": "/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/",
+      "outputPath": "/Users/edzhanaeva/RiderProjects/edzhanaeva/проект дз/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/edzhanaeva/.nuget/NuGet/NuGet.Config"
