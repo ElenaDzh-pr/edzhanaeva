@@ -1,0 +1,14 @@
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/bin/Debug/net9.0/проект дз
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/bin/Debug/net9.0/проект дз.deps.json
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/bin/Debug/net9.0/проект дз.runtimeconfig.json
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/bin/Debug/net9.0/проект дз.dll
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/bin/Debug/net9.0/проект дз.pdb
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/проект дз.GeneratedMSBuildEditorConfig.editorconfig
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/проект дз.AssemblyInfoInputs.cache
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/проект дз.AssemblyInfo.cs
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/проект дз.csproj.CoreCompileInputs.cache
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/проект дз.dll
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/refint/проект дз.dll
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/проект дз.pdb
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/проект дз.genruntimeconfig.cache
+/Users/edzhanaeva/Desktop/курс C# basic/проект дз/проект дз/obj/Debug/net9.0/ref/проект дз.dll
