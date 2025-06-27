@@ -26,7 +26,7 @@
         "net9.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://artifactory.s.o3.ru/artifactory/api/nuget/v3/nuget-virtual-virtual": {}
       },
       "frameworks": {
         "net9.0": {

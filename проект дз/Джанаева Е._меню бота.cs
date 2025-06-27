@@ -295,7 +295,7 @@ class Program
 
     static void ValidateString(string? str)
     {
-        if (string.IsNullOrEmpty(str) || str.Trim().Length == 0)
+        if (string.IsNullOrWhiteSpace(str) || str.Trim().Length == 0)
         {
             throw new ArgumentException("Строка не может быть null, пустой или состоять только из пробелов");
         }
