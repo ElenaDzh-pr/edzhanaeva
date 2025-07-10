@@ -125,8 +125,8 @@ class Program
     {
         Console.WriteLine("Пожалуйста, введите ваше имя: ");
         name = Console.ReadLine()?.Trim();
+        ValidateString(name);
         currentUser = new ToDoUser(name);
-        ValidateString(currentUser.TelegramUserName);
         
         Console.WriteLine($"Добро пожаловать, {currentUser.TelegramUserName}!");
         Console.WriteLine($"Ваш ID: {currentUser.UserId}");
