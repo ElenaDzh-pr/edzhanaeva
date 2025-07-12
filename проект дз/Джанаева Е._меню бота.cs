@@ -58,10 +58,11 @@ class Program
                     case "/help": Help(); break;
                     case "/info": Info(); break;
                     case "/echo": EchoMessage(); break;
-                    case "/addtask": Addtask(); break;
-                    case "/showtasks": Showtasks(); break;
-                    case "/removetask": Removetask(); break;
-                    case "/completetask": Completetask(); break;
+                    case "/addtask": AddTask(); break;
+                    case "/showtasks": ShowTasks(); break;
+                    case "/showalltasks": ShowAllTasks(); break;
+                    case "/removetask": RemoveTask(); break;
+                    case "/completetask": CompleteTask(); break;
                     case "/exit": Exit(); return;
                     default: Console.WriteLine("Неизвестная команда"); break;
                 }
@@ -110,7 +111,8 @@ class Program
         {
             Console.WriteLine("/echo - отправить текст");
             Console.WriteLine("/addtask - добавить задачу");
-            Console.WriteLine("/showtasks - показать список задач");
+            Console.WriteLine("/showtasks - показать список текущих задач");
+            Console.WriteLine("/showalltasks - показать список всех задач");
             Console.WriteLine("/removetask - удалить задачу");
             Console.WriteLine("/completetask - завершить задачу");
         }
@@ -162,7 +164,8 @@ class Program
         Console.WriteLine("/echo - повторяет введенное сообщение и отправляет его обратно");
         Console.WriteLine("/info - получить информацию о боте");
         Console.WriteLine("/addtask - добавить задачу в список задач");
-        Console.WriteLine("/showtasks - показать список введенных задач");
+        Console.WriteLine("/showtasks - показать список текущих задач");
+        Console.WriteLine("/showalltasks - показать список всех задач");
         Console.WriteLine("/removetask - удалить задачу из текущего списка");
         Console.WriteLine("/completetask - отметить задачу как завершенную");
     }
@@ -174,7 +177,7 @@ class Program
             : $"{currentUser.TelegramUserName}, версия бота 1.0, дата создания 25.05.2025");
     }
 
-    static void Addtask()
+    static void AddTask()
     {
         if (tasks.Count >= maxTaskLimit)
         {
@@ -208,7 +211,7 @@ class Program
         Console.WriteLine($"{currentUser.TelegramUserName}, задача добавлена!");
     }
 
-    static void Showtasks()
+    static void ShowTasks()
     {
         if (tasks.Count == 0)
         {
@@ -221,6 +224,27 @@ class Program
             for (int i = 0; i < tasks.Count; i++)
             {
                 var task = tasks[i];
+                if (task.State == ToDoItem.ToDoItemState.Active)
+                {
+                    Console.WriteLine($"{task.Name} - {task.CreatedAt.ToLocalTime()} - {task.Id}");
+                }
+            }
+        }
+    }
+
+    static void ShowAllTasks()
+    {
+        if (tasks.Count == 0)
+        {
+            Console.WriteLine($"{currentUser.TelegramUserName}, список задач пуст");
+            return;
+        }
+        else
+        {
+            Console.WriteLine("\nСписок всех задач:");
+            for (int i = 0; i < tasks.Count; i++)
+            {
+                var task = tasks[i];
                 if (task.State == ToDoItem.ToDoItemState.Active || task.State == ToDoItem.ToDoItemState.Completed)
                 {
                     Console.WriteLine($"({task.State}) {task.Name} - {task.CreatedAt.ToLocalTime()} - {task.Id}");
@@ -229,7 +253,7 @@ class Program
         }
     }
 
-    static void Removetask()
+    static void RemoveTask()
     {
         if (tasks.Count == 0)
         {
@@ -237,7 +261,7 @@ class Program
             return;
         }
 
-        Showtasks();
+        ShowTasks();
 
         Console.WriteLine($"{currentUser.TelegramUserName}, введите номер задачи для удаления:");
         var input = Console.ReadLine();
@@ -255,7 +279,7 @@ class Program
         Console.WriteLine($"Задача удалена. Осталось задач: {tasks.Count}");
     }
 
-    static void Completetask()
+    static void CompleteTask()
     {
         Console.WriteLine("Введите Id задачи в формате 73c7940a-ca8c-4327-8a15-9119bffd1d5e:");
         var input = Console.ReadLine()?.Trim();
