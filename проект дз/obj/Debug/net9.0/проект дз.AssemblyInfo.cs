@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("проект дз")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74a8c84c6597ceafae2e49b5cd67ada2b8bf1d8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cfd8527031c38853f09f104aacf568ea13bb131")]
 [assembly: System.Reflection.AssemblyProductAttribute("проект дз")]
 [assembly: System.Reflection.AssemblyTitleAttribute("проект дз")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
